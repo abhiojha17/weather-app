@@ -62,6 +62,6 @@ function datefunction(d){
     let day=days[d.getDay()];
     let date=d.getDate();
     let month=months[d.getMonth()];
-    let year=d.getYear();
+    let year = d.getFullYear();
     return `${day}, ${date} ${month} ${year}`;
 }
