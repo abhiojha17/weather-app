@@ -1,50 +1,47 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BookList app</title>
-  <!-- <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="container mt-4">
-    <h1 class="display-4  main-heading text-center">
-      <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>List
-    </h1>
-    <form id="book-form">
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" id="title" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="author">Author</label>
-        <input type="text" id="author" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="isbn">ISBN#</label>
-        <input type="text" id="isbn" class="form-control">
-      </div>
-      <input type="submit" value="Add Book" class="btn addbook-btn btn-primary btn-block">
-    </form>
-    <table class="table table-striped mt-5">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>ISBN#</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody id="book-list" class="tablebody"></tbody>
-    </table>
-  </div>
-  <script src="app.js">
-  </script>
+    <div class="main-container">
+        <div class="container top">
+            <h1>Weather App</h1>
+            <form action="" onsubmit="return false">
+                <input type="text" name="" class="search" id="" placeholder="search by city name">
+                <button type="submit" class="btn">Submit</button>
+                <p class="error"></p>
+            </form>
+            <section>
+                <div class="container">
+                    <div class="icon">
+                        <img src="" alt="" class="weather-icon">
+                    </div>
+                    <div class="location">
+                        <div class="city">New York</div>
+                        <div class="date">Thrusday, NOV 26 2021</div>
+                    </div>
+                    <div class="current">
+                        <div class="temp">Temp: 25 <span>°C</span></div>
+                        <div class="weather">
+                            weather:sunny
+                        </div>
+                        <div class="temp-range">
+                            Temp Range: 10°C/15°C
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer >
+        <div class="footer">Copyright@Ojha</div>
+    </footer>
+    <script src="app.js"></script>
 </body>
-
 </html>
